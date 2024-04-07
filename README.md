@@ -18,7 +18,7 @@ Welcome to our E-Commerce project! This project is built using Next.js and Tailw
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ecommerce-project.git
+https://github.com/nileshpatil-15/Appscrip-task-Nilesh-Patil.git
 
 
 Technologies Used
