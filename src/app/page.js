@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       {/* filter section */}
-      <div className="flex justify-center md:justify-between md:gap-0 gap-[50%] items-start m-auto border-b border-t border-t-[#BFC8CD] border-b-[#BFC8CD] mt-10 mb-5 md:ml-[34px] md:mr-[34px]  md:px-11 ">
+      <div className="flex justify-center md:justify-between md:gap-0 gap-[50%] items-start m-auto border-b border-t border-t-[#BFC8CD] border-b-[#BFC8CD] mt-10 mb-5 md:ml-[34px] md:mr-[34px] px-2  md:px-11 ">
         <button className="mt-3 text-14px font-[600] md:hidden ">FILTER</button>
         <div className="  hidden md:block md:flex mt-2">
           <p className="text-[14px] font-[700] mr-7 ">3425 ITEMS</p>
