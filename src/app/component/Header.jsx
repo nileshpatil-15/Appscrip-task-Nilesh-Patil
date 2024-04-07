@@ -26,7 +26,7 @@ const Header = () => {
         <img src="/icons/Vector.png" className="h-[20px] md:h-[35px]" />
       </div>
       <div>
-        <h2 className="text-[20px] font-bold">LOGO</h2>
+        <h2 className="text-[20px] pl-40 font-bold">LOGO</h2>
       </div>
       <div>
         <nav>
@@ -72,10 +72,10 @@ const Header = () => {
                 onChange={handleExpansion}
                 slots={{ transition: Fade }}
                 slotProps={{ transition: { timeout: 400 } }}
-                // sx={{
-                //   '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
-                //   '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
-                // }}
+                sx={{
+                  '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
+                  '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
+                }}
               >
                 <select>
                   <option>ENG</option>
