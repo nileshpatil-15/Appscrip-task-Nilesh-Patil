@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import shopCategory from '../constant/index'
+import {shopCategory} from '../constant/index'
 const Category = () => {
   return (
     
