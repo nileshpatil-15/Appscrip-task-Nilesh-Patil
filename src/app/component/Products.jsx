@@ -37,11 +37,11 @@ const Products = () => {
     };
 
     return (
-        <div className='flex justify-center items-center'>
+        <div className=' w-full flex justify-center min-h-[450px] px-2  md:px-11'>
             {isLoading ? (
                 <Loader />
             ) : (
-                <ul className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8'>
+                <ul  className='grid place-items-center   w-full  grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8'>
                     {products.length > 0 ? (
                         products.map(product => ( 
                             <li key={product.id}>

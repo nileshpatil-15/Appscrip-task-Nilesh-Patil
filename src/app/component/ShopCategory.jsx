@@ -4,7 +4,7 @@ import {shopCategory} from '../constant/index'
 const Category = () => {
   return (
     
-    <div>
+    <div className='px-2 md:px-11'>
 <div className='md:hidden'>
 <button disabled={true} className='text-[12px] text-[#BFC8CD]'>
     HOME | 

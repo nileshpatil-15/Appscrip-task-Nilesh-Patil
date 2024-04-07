@@ -18,15 +18,15 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between  py-1 items-center pb-4 border-b-[#BFC8CD]">
+    <header className="flex justify-between  py-4 items-center pb-4 border-b-[#BFC8CD] px-2 md:px-11">
       <div className="flex gap-3">
         <button className="md:hidden">
           <img src="/icons/hamburger.png" className="h-[20px] " />
         </button>
-        <img src="/icons/Vector.png" className="h-[20px] md:h-[35px]" />
+        <img src="/icons/Vector.png" className="h-[20px] md:h-[35px] " />
       </div>
       <div>
-        <h2 className="text-[20px] pl-40 font-bold">LOGO</h2>
+        <h2 className="text-[20px] pl-40  font-bold">LOGO</h2>
       </div>
       <div>
         <nav>
@@ -34,7 +34,7 @@ const Header = () => {
             <li>
               <Link href="/">
                 <img
-                  className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]"
+                  className="h-[20px] w-[20px] md:h-[18px] md:w-[18px]"
                   src="/icons/magnifying-glass.png"
                 />
               </Link>
@@ -43,7 +43,7 @@ const Header = () => {
             <li>
               <Link href="/">
                 <img
-                  className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]"
+                  className="h-[18px] w-[18px] md:h-[18px] md:w-[18px]"
                   src="/icons/love.png"
                 />
               </Link>
@@ -51,21 +51,21 @@ const Header = () => {
             <li>
               <Link href="/">
                 <img
-                  className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]"
+                  className="h-[20px] w-[20px] md:h-[18px] md:w-[18px]"
                   src="/icons/handbag.png"
                 />
               </Link>
             </li>
-            <li>
+            <li className="hidden md:block">
               <Link href="/">
                 <img
-                  className="h-[20px] w-[20px] md:h-[24px] md:w-[24px]"
+                  className="h-[20px] w-[20px] md:h-[18px] md:w-[18px]"
                   src="/icons/user.png"
                 />
               </Link>
             </li>
 
-            <li>
+            <li className="hidden md:block">
               <Accordion
                elevation={0}
                 expanded={expanded}

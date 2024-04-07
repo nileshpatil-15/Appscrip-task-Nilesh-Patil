@@ -46,7 +46,7 @@ const Drawer = () => {
            
 
           </AccordionSummary>
-          <Typography className="h-10" sx={{ fontSize: "15px", fontWeight: 700,paddingLeft:'15px' }}>
+          <Typography className="h-10" sx={{ fontSize: "15px", fontWeight: 700,paddingLeft:'23px' }}>
               All
             </Typography> 
           <AccordionDetails sx={{ fontSize: 12 }}>

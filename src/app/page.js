@@ -8,10 +8,11 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import Products from "./component/Products";
 import Drawer from "./component/Drawer";
+import Footer from "./component/Footer";
 export default function Home() {
   const [appliedFilters, setAppliedFilters] = React.useState(false);
   return (
-    <main className=" min-h-screen px-2 ">
+    <main className=" min-h-screen   ">
       <Header />
       <Category />
       <div className="flex justify-center flex-col items-center pt-10 ">
@@ -27,7 +28,7 @@ export default function Home() {
         </div>
       </div>
       {/* filter section */}
-      <div className="flex justify-center md:justify-between md:gap-0 gap-[50%] items-start m-auto border-b border-t border-t-[#BFC8CD] border-b-[#BFC8CD] mt-10 mb-5  ">
+      <div className="flex justify-center md:justify-between md:gap-0 gap-[50%] items-start m-auto border-b border-t border-t-[#BFC8CD] border-b-[#BFC8CD] mt-10 mb-5 md:px-11 ">
         <button className="mt-3 text-14px font-[700] md:hidden ">FILTER</button>
         <div className="  hidden md:block md:flex mt-2">
           <p className="text-[14px] font-[700] mr-7 ">3425 ITEMS</p>
@@ -58,6 +59,7 @@ export default function Home() {
      <Products/>
 
 </div>
+<Footer/>
     
 
     </main>
