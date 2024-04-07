@@ -35,7 +35,7 @@ const RecommendedOption = () => {
         aria-controls="panel2-content"
         id="panel2-header"
       >
-        <Typography sx={{ fontSize: "16px", fontWeight: 700 }}>
+        <Typography sx={{ fontSize: "14px", fontWeight: 700 }}>
           {recommendedOption[selectedOption]}
         </Typography>
       </AccordionSummary>

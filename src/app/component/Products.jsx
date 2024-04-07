@@ -37,7 +37,7 @@ const Products = () => {
     };
 
     return (
-        <div className=' w-full flex justify-center min-h-[450px] px-2  md:px-11'>
+        <div className=' w-full flex justify-center min-h-[450px] px-2  md:px-11 mb-4'>
             {isLoading ? (
                 <Loader />
             ) : (

@@ -22,6 +22,9 @@ padding: 0;
 box-sizing: border-box;
 color:#252020 ;
 }
+.font-simplon-norm {
+  font-family: 'Simplon Norm', sans-serif;
+}
 
 /* @layer utilities {
   .text-balance {

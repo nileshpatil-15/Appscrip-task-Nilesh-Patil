@@ -46,6 +46,7 @@ const Footer = () => {
               <img
                 className="mr-2"
                 src="/icons/United States of America (US).png"
+                alt='USD'
               />
               <span>USD</span>
             </div>
@@ -86,26 +87,33 @@ const Footer = () => {
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136187.png"
+              alt='google-pay'
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136189.png"
+              alt='master-card'
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136191.png"
+              alt='pay-pal'
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group.png"
+              alt="apple-pay"
             />
             <img
               className="w-11 h-8  p-2 rounded-lg bg-[#006FCF]"
               src="/images/Vector.png"
+              alt="amex"
+              
             />
             <img
               className="w-11 h-8  p-2 rounded-lg bg-[#5A31F4]"
               src="/images/Vector1.png"
+              alt="pay"
             />
           </div>
         </div>
