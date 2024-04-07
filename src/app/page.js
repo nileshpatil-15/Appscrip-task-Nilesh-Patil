@@ -1,7 +1,8 @@
 
 import Image from "next/image";
 import Header from "./component/Header";
-import Category from "./component/Category";
+import Category from "./component/ShopCategory";
+import  RecommendedOption  from "./component/RecommendedOption";
 export default function Home() {
   return (
     <main className=" min-h-screen px-2">
@@ -13,6 +14,13 @@ export default function Home() {
   <p className="text-center text-[16px] md:text-[16px] ">Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
 
   </div>
+</div> 
+{/* filter section */}
+<div className="flex justify-between items-start ">
+  <button className="mt-3">
+    FILTER
+    </button>
+  <RecommendedOption/>
 </div>
 
     </main>

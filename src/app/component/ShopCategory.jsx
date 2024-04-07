@@ -15,7 +15,7 @@ const Category = () => {
 </div>
 <div className='hidden md:block '>
     <ul className=' flex justify-center pr-40'>
-        {shopCategory.map((item, index) => (
+        {shopCategory?.map((item, index) => (
     // Map over shopCategory array
     <li key={index} className='text-[13px] px-2 font-[700]'>
 <Link href={item}>

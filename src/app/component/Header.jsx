@@ -67,6 +67,7 @@ const Header = () => {
 
             <li>
               <Accordion
+               elevation={0}
                 expanded={expanded}
                 onChange={handleExpansion}
                 slots={{ transition: Fade }}
