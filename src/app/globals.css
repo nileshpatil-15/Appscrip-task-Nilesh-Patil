@@ -17,13 +17,13 @@
 }
 
 body {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-color:#252020 ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #252020;
 }
 .font-simplon-norm {
-  font-family: 'Simplon Norm', sans-serif;
+  font-family: "Simplon Norm", sans-serif;
 }
 
 /* @layer utilities {

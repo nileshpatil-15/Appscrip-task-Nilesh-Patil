@@ -11,19 +11,21 @@ import CheckIcon from "@mui/icons-material/Check";
 import { filterData } from "../constant";
 
 const Drawer = () => {
-  const [expanded, setExpanded] = React.useState(Array(filterCategory.length).fill(false));
+  const [expanded, setExpanded] = React.useState(
+    Array(filterCategory.length).fill(false)
+  );
 
   const handleExpansion = (index) => {
-    setExpanded(prevState =>
-      prevState.map((value, idx) => idx === index ? !value : false)
+    setExpanded((prevState) =>
+      prevState.map((value, idx) => (idx === index ? !value : false))
     );
   };
 
   return (
-    <ul  >
+    <ul>
       {filterCategory.map((item, index) => (
         <Accordion
-        sx={{height:'30px'}}
+          sx={{ height: "30px" }}
           key={item}
           elevation={0}
           expanded={expanded[index]}
@@ -32,7 +34,9 @@ const Drawer = () => {
           slotProps={{ transition: { timeout: 400 } }}
           sx={{
             "& .MuiAccordion-region": { height: expanded[index] ? "auto" : 0 },
-            "& .MuiAccordionDetails-root": { display: expanded[index] ? "block" : "none" },
+            "& .MuiAccordionDetails-root": {
+              display: expanded[index] ? "block" : "none",
+            },
           }}
         >
           <AccordionSummary
@@ -40,15 +44,18 @@ const Drawer = () => {
             aria-controls="panel2-content"
             id="panel2-header"
           >
-            <Typography sx={{ fontSize: "15px", fontWeight: 600,margin:'10px' }}>
+            <Typography
+              sx={{ fontSize: "15px", fontWeight: 600, margin: "10px" }}
+            >
               {item}
             </Typography>
-           
-
           </AccordionSummary>
-          <Typography className="h-10" sx={{ fontSize: "15px", fontWeight: 700,paddingLeft:'23px' }}>
-              All
-            </Typography> 
+          <Typography
+            className="h-10"
+            sx={{ fontSize: "15px", fontWeight: 700, paddingLeft: "23px" }}
+          >
+            All
+          </Typography>
           <AccordionDetails sx={{ fontSize: 12 }}>
             <ul className="list-none">
               <button className="underline text-[#BFC8CD]">Unselect all</button>

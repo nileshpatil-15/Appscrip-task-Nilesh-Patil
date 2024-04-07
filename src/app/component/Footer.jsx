@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { quickLinks } from "../constant";
 const Footer = () => {
   return (
-    <footer className="  bottom-0  bg-[rgb(0,0,0)] text-[#FFFFFF] p-3 md:px-11 ">
+    <footer className="   bg-[rgb(0,0,0)] text-[#FFFFFF] p-3 md:px-11 ">
       {/* company details */}
       <div className="md:flex justify-between">
         <div>
@@ -46,7 +46,7 @@ const Footer = () => {
               <img
                 className="mr-2"
                 src="/icons/United States of America (US).png"
-                alt='USD'
+                alt="USD"
               />
               <span>USD</span>
             </div>
@@ -87,17 +87,17 @@ const Footer = () => {
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136187.png"
-              alt='google-pay'
+              alt="google-pay"
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136189.png"
-              alt='master-card'
+              alt="master-card"
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
               src="/images/Group 136191.png"
-              alt='pay-pal'
+              alt="pay-pal"
             />
             <img
               className="w-11 h-8 bg-white p-2 rounded-lg"
@@ -108,7 +108,6 @@ const Footer = () => {
               className="w-11 h-8  p-2 rounded-lg bg-[#006FCF]"
               src="/images/Vector.png"
               alt="amex"
-              
             />
             <img
               className="w-11 h-8  p-2 rounded-lg bg-[#5A31F4]"

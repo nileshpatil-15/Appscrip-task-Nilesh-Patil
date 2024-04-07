@@ -47,22 +47,17 @@ export default function Home() {
         <RecommendedOption />
       </div>
 
-
-<div className=" flex ">
-{appliedFilters && (
-        <div className="hidden md:block  w-[30%] lg:w-[20%] mr-3">
-          {/* Drawer Content */}
-          <Drawer/>
-        </div>
-      )}
-      {/* products */}
-     <Products/>
-
-</div>
-<Footer/>
-    
-
+      <div className=" flex ">
+        {appliedFilters && (
+          <div className="hidden md:block  w-[30%] lg:w-[20%] mr-3">
+            {/* Drawer Content */}
+            <Drawer />
+          </div>
+        )}
+        {/* products */}
+        <Products />
+      </div>
+      <Footer />
     </main>
-  )
-
+  );
 }

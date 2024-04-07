@@ -31,9 +31,17 @@ const Header = () => {
     <header className="flex justify-between py-4 items-center pb-4 border-b-[#BFC8CD] px-2 md:px-11">
       <div className="flex gap-3">
         <button className="md:hidden" onClick={handleDrawerOpen}>
-          <img src="/icons/hamburger.png" className="h-[20px]" alt="hamburger" />
+          <img
+            src="/icons/hamburger.png"
+            className="h-[20px]"
+            alt="hamburger"
+          />
         </button>
-        <img src="/icons/Vector.png" className="h-[20px] md:h-[35px]" alt="logo" />
+        <img
+          src="/icons/Vector.png"
+          className="h-[20px] md:h-[35px]"
+          alt="logo"
+        />
       </div>
       <div>
         <h2 className="text-[20px] md:pl-40 font-[800]">LOGO</h2>
@@ -85,11 +93,13 @@ const Header = () => {
                 slots={{ transition: Fade }}
                 slotProps={{ transition: { timeout: 400 } }}
                 sx={{
-                  '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
-                  '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
+                  "& .MuiAccordion-region": { height: expanded ? "auto" : 0 },
+                  "& .MuiAccordionDetails-root": {
+                    display: expanded ? "block" : "none",
+                  },
                 }}
               >
-                  <select>
+                <select>
                   <option>ENG</option>
                   <option>HND</option>
                   <option>MAR</option>
@@ -99,22 +109,20 @@ const Header = () => {
           </ul>
         </nav>
       </div>
- <Drawer
- anchor="left"
- open={drawerOpen}
- onClose={handleDrawerClose}
->
- <div className="p-4 bg-white w-60">
-   <ul className="flex flex-col space-y-2">
-     {shopCategory.map((item, index) => (
-       <li key={index} className="hover:bg-gray-100 px-4 py-2 rounded-md cursor-pointer">
-         {item}
-       </li>
-     ))}
-   </ul>
- </div>
-</Drawer>
-
+      <Drawer anchor="left" open={drawerOpen} onClose={handleDrawerClose}>
+        <div className="p-4 bg-white w-60">
+          <ul className="flex flex-col space-y-2">
+            {shopCategory.map((item, index) => (
+              <li
+                key={index}
+                className="hover:bg-gray-100 px-4 py-2 rounded-md cursor-pointer"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Drawer>
     </header>
   );
 };
